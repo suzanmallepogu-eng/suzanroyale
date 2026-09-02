@@ -1,0 +1,570 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SUZAN ROYALE — Luxury Hotel & Hospitality</title>
+
+  <meta name="description"
+    content="SUZAN ROYALE is a five-star luxury hotel offering elegant rooms and suites, fine dining, wellness and personalized hospitality.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        SUZAN ROYALE
+      </a>
+
+      <ul class="desktop-nav">
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="rooms.html">Rooms &amp; Suites</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="dining.html">Dining</a>
+        </li>
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+        <li>
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="reservations.html" class="nav-book">
+          Book Your Stay
+        </a>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-navigation" id="mobileNavigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="rooms.html">Rooms &amp; Suites</a>
+      <a href="services.html">Services</a>
+      <a href="dining.html">Dining</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="reservations.html" class="mobile-book">
+        Book Your Stay
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <img src="assets/images/hero-exterior.jpg" alt="Illuminated facade of the SUZAN ROYALE hotel at twilight"
+        class="hero-image">
+
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          Luxury Hotel &amp; Hospitality
+        </p>
+
+        <h1>
+          SUZAN ROYALE
+        </h1>
+
+        <p class="hero-tagline">
+          Where Luxury Meets Comfort
+        </p>
+
+        <p class="hero-description">
+          An exceptional hospitality experience crafted around elegance,
+          comfort and personalized service.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="rooms.html" class="button button-primary">
+            Explore Rooms
+          </a>
+
+          <a href="reservations.html" class="button button-outline">
+            Book Your Stay
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section" id="about">
+      <div class="narrow-container">
+        <p class="eyebrow">
+          About Us
+        </p>
+
+        <h2>
+          The Royale Experience
+        </h2>
+
+        <p class="section-description">
+          SUZAN ROYALE is a contemporary five-star retreat where thoughtful
+          design, exceptional service and personalized hospitality come
+          together. Every stay is designed around the guest — from the first
+          welcome to the final farewell.
+        </p>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="stat-number">40+</p>
+          <p class="stat-label">Luxury Rooms</p>
+        </div>
+
+        <div class="stat">
+          <p class="stat-number">24/7</p>
+          <p class="stat-label">Guest Service</p>
+        </div>
+
+        <div class="stat">
+          <p class="stat-number">5-Star</p>
+          <p class="stat-label">Hospitality</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ROOMS -->
+    <section class="rooms-section" id="rooms">
+      <div class="wide-container">
+        <div class="section-heading">
+          <p class="eyebrow">
+            Rooms &amp; Suites
+          </p>
+
+          <h2>
+            Stay in Style
+          </h2>
+        </div>
+
+        <div class="rooms-grid">
+          <!-- DELUXE -->
+          <article class="room-card">
+            <button type="button" class="room-image-button" data-room="deluxe" aria-label="View Deluxe Room details">
+              <img src="assets/images/deluxe-1.jpg" alt="Deluxe Room at SUZAN ROYALE" loading="lazy">
+            </button>
+
+            <div class="room-card-body">
+              <h3>
+                Deluxe Room
+              </h3>
+
+              <p>
+                A serene retreat with a king bed, soft ambient lighting and a
+                quiet city outlook.
+              </p>
+
+              <p class="room-price">
+                From ₹18,000 / night
+              </p>
+
+              <button type="button" class="view-room" data-room="deluxe">
+                View Room
+              </button>
+            </div>
+          </article>
+
+          <!-- EXECUTIVE -->
+          <article class="room-card">
+            <button type="button" class="room-image-button" data-room="executive"
+              aria-label="View Executive Suite details">
+              <img src="assets/images/executive-1.jpg" alt="Executive Suite at SUZAN ROYALE" loading="lazy">
+            </button>
+
+            <div class="room-card-body">
+              <h3>
+                Executive Suite
+              </h3>
+
+              <p>
+                A separate lounge, floor-to-ceiling windows and refined details
+                for longer stays.
+              </p>
+
+              <p class="room-price">
+                From ₹35,000 / night
+              </p>
+
+              <button type="button" class="view-room" data-room="executive">
+                View Room
+              </button>
+            </div>
+          </article>
+
+          <!-- ROYAL -->
+          <article class="room-card">
+            <button type="button" class="room-image-button" data-room="royal" aria-label="View Royal Suite details">
+              <img src="assets/images/royal-1.jpg" alt="Royal Suite at SUZAN ROYALE" loading="lazy">
+            </button>
+
+            <div class="room-card-body">
+              <h3>
+                Royal Suite
+              </h3>
+
+              <p>
+                Our signature residence — expansive living spaces, private
+                dining and panoramic views.
+              </p>
+
+              <p class="room-price">
+                From ₹75,000 / night
+              </p>
+
+              <button type="button" class="view-room" data-room="royal">
+                View Room
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-section" id="services">
+      <div class="wide-container">
+        <div class="section-heading">
+          <p class="eyebrow">
+            Why SUZAN ROYALE
+          </p>
+
+          <h2>
+            Designed Around You
+          </h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature">
+            <span class="feature-number">01</span>
+            <h3>Personalized Service</h3>
+            <p>
+              A dedicated team that remembers preferences and anticipates
+              every request.
+            </p>
+          </article>
+
+          <article class="feature">
+            <span class="feature-number">02</span>
+            <h3>Fine Dining</h3>
+            <p>
+              Seasonal menus and a curated culinary experience served in
+              intimate, elegant settings.
+            </p>
+          </article>
+
+          <article class="feature">
+            <span class="feature-number">03</span>
+            <h3>Wellness &amp; Relaxation</h3>
+            <p>
+              Spa rituals, peaceful spaces and a quiet atmosphere for
+              unhurried moments.
+            </p>
+          </article>
+
+          <article class="feature">
+            <span class="feature-number">04</span>
+            <h3>Modern Hospitality</h3>
+            <p>
+              Effortless guest service, thoughtful comfort and discreet
+              round-the-clock care.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="founder-section" id="management">
+      <div class="founder-container">
+        <div class="founder-image-wrap">
+          <div class="founder-frame"></div>
+          <img src="assets/images/founder.jpg" alt="Founder of SUZAN ROYALE" class="founder-image" loading="lazy">
+        </div>
+
+        <div class="founder-content">
+          <p class="eyebrow">
+            Management
+          </p>
+
+          <h2>
+            Meet Our Founder
+          </h2>
+
+          <p>
+            SUZAN ROYALE was envisioned around a simple belief: exceptional
+            hospitality should feel personal. Every space, service and
+            experience is shaped to create a sense of comfort, elegance and
+            belonging.
+          </p>
+
+          <p>
+            From thoughtful design to attentive service, the vision behind
+            SUZAN ROYALE is to create a hotel where every guest feels
+            genuinely welcomed and remembered.
+          </p>
+
+          <div class="founder-signature">
+            <p class="founder-name">
+              Suzan Mallepogu
+            </p>
+            <p class="founder-role">
+              Founder &amp; Chief Executive Officer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="reservation-section" id="reservations">
+      <div class="reservation-container">
+        <div class="reservation-heading">
+          <p class="eyebrow">
+            Reservations
+          </p>
+
+          <h2>
+            Your Stay Begins Here
+          </h2>
+
+          <p>
+            Discover a new standard of comfort, elegance and personalized
+            hospitality.
+          </p>
+        </div>
+
+        <div class="reservation-card" id="reservationCard">
+          <form id="reservationForm">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="checkIn">Check-in</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+              </div>
+
+              <div class="form-field">
+                <label for="checkOut">Check-out</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+              </div>
+
+              <div class="form-field">
+                <label for="guests">Guests</label>
+                <select id="guests" name="guests">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="roomType">Room Type</label>
+                <select id="roomType" name="roomType">
+                  <option value="Deluxe Room">Deluxe Room (₹18,000 / night)</option>
+                  <option value="Executive Suite">Executive Suite (₹35,000 / night)</option>
+                  <option value="Grand Luxury Suite">Grand Luxury Suite (₹48,000 / night)</option>
+                  <option value="Premium Twin Room">Premium Twin Room (₹22,000 / night)</option>
+                  <option value="Presidential Suite">Presidential Suite (₹62,000 / night)</option>
+                  <option value="Royal Suite">Royal Suite (₹75,000 / night)</option>
+                </select>
+              </div>
+
+              <div class="form-field full">
+                <label for="guestName">Guest Name</label>
+                <input type="text" id="guestName" name="guestName" placeholder="Full name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 90000 00000" required>
+              </div>
+
+              <div class="form-field full">
+                <button type="submit" class="reservation-submit">
+                  Confirm Reservation
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="reservation-confirmation" id="reservationConfirmation" hidden>
+            <p class="eyebrow">
+              Reservation Confirmed
+            </p>
+
+            <h3 id="confirmationTitle">
+              Thank you
+            </h3>
+
+            <p>
+              We look forward to welcoming you to SUZAN ROYALE.
+              Your reservation details have been recorded.
+            </p>
+
+            <div class="confirmation-details" id="confirmationDetails"></div>
+
+            <button type="button" class="confirmation-button" id="newReservation">
+              Make Another Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="logo">
+          SUZAN ROYALE
+        </p>
+
+        <p>
+          Luxury Hotel &amp; Hospitality
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Quick Links
+        </p>
+
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="services.html">Services</a>
+        <a href="dining.html">Dining</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Guest Dashboard</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Contact
+        </p>
+
+        <p>
+          12 Royale Avenue, Hyderabad
+        </p>
+
+        <a href="tel:+919000000000">
+          +91 90000 00000
+        </a>
+
+        <a href="mailto:stay@suzanroyale.com">
+          stay@suzanroyale.com
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Social Media
+        </p>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 SUZAN ROYALE. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ROOM MODAL -->
+  <div class="room-modal" id="roomModal" aria-hidden="true">
+    <div class="room-modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="room-modal-content">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close room details">
+        &times;
+      </button>
+
+      <div class="room-gallery" id="roomGallery"></div>
+
+      <div class="modal-details">
+        <p class="eyebrow">
+          Rooms &amp; Suites
+        </p>
+
+        <h2 id="modalRoomName"></h2>
+
+        <p id="modalRoomDescription"></p>
+
+        <div class="room-detail-grid">
+          <div>
+            <strong id="modalRoomPrice"></strong>
+            <span>Rate</span>
+          </div>
+
+          <div>
+            <strong id="modalRoomSize"></strong>
+            <span>Size</span>
+          </div>
+
+          <div>
+            <strong id="modalRoomGuests"></strong>
+            <span>Occupancy</span>
+          </div>
+        </div>
+
+        <p class="modal-subheading">
+          Key Amenities
+        </p>
+
+        <ul class="amenities" id="modalAmenities"></ul>
+
+        <a href="reservations.html" class="modal-reserve" id="modalReserve">
+          Reserve This Room
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

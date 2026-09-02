@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reservations — SUZAN ROYALE Luxury Hotel</title>
+
+  <meta name="description"
+    content="Book your five-star stay at SUZAN ROYALE. Select from our luxury suites, customize your bespoke amenities and receive instant booking confirmation.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        SUZAN ROYALE
+      </a>
+
+      <ul class="desktop-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="rooms.html">Rooms &amp; Suites</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="dining.html">Dining</a>
+        </li>
+        <li>
+          <a href="reservations.html" class="active">Reservations</a>
+        </li>
+        <li>
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="reservations.html" class="nav-book">
+          Book Your Stay
+        </a>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-navigation" id="mobileNavigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="rooms.html">Rooms &amp; Suites</a>
+      <a href="services.html">Services</a>
+      <a href="dining.html">Dining</a>
+      <a href="reservations.html" class="active">Reservations</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="reservations.html" class="mobile-book">
+        Book Your Stay
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- RESERVATIONS BANNER -->
+    <section class="page-header-banner">
+      <img src="assets/rooms/royal-1.jpg" alt="SUZAN ROYALE Booking Experience" class="banner-bg">
+      <div class="banner-overlay"></div>
+
+      <div class="banner-content">
+        <p class="eyebrow">
+          Bespoke Reservations
+        </p>
+
+        <h1>
+          Your Stay Begins Here
+        </h1>
+
+        <p class="banner-tagline">
+          Best Rate Guarantee &bull; Personalized Touches &bull; Instant Confirmation
+        </p>
+
+        <p class="banner-desc">
+          Select your preferred luxury accommodation, tailor your bespoke add-ons,
+          and prepare for an unforgettable hospitality experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- BOOKING ENGINE SECTION -->
+    <section class="booking-engine-section">
+      <div class="wide-container">
+        <!-- FORM CONTAINER -->
+        <div id="bookingFormWrapper">
+          <form id="fullBookingForm">
+            <div class="booking-layout-grid">
+              <!-- LEFT COLUMN: SELECTION & GUEST DETAILS -->
+              <div class="booking-steps-column">
+                <!-- STEP 1: CHOOSE ACCOMMODATION -->
+                <div class="reservation-card" style="margin-top: 0; margin-bottom: 30px;">
+                  <p class="eyebrow">Step 01</p>
+                  <h3 style="margin-top: 8px; font-size: 1.8rem;">Select Your Suite</h3>
+                  <p style="margin-bottom: 16px; font-size: 0.88rem;">All rates include complimentary high-speed fiber
+                    Wi-Fi and evening turndown service.</p>
+
+                  <div class="room-selection-cards">
+                    <!-- Deluxe -->
+                    <label class="room-select-card selected" data-room="Deluxe Room" data-rate="18000">
+                      <input type="radio" name="selectedRoom" value="Deluxe Room" checked>
+                      <img src="assets/rooms/deluxe-1.jpg" alt="Deluxe Room" class="room-select-img">
+                      <h4>Deluxe Room</h4>
+                      <span class="rate">₹18,000 / night</span>
+                    </label>
+
+                    <!-- Executive -->
+                    <label class="room-select-card" data-room="Executive Suite" data-rate="35000">
+                      <input type="radio" name="selectedRoom" value="Executive Suite">
+                      <img src="assets/rooms/executive-1.jpg" alt="Executive Suite" class="room-select-img">
+                      <h4>Executive Suite</h4>
+                      <span class="rate">₹35,000 / night</span>
+                    </label>
+
+                    <!-- Grand Luxury -->
+                    <label class="room-select-card" data-room="Grand Luxury Suite" data-rate="48000">
+                      <input type="radio" name="selectedRoom" value="Grand Luxury Suite">
+                      <img src="assets/rooms/grand-luxury-1.jpg" alt="Grand Luxury Suite" class="room-select-img">
+                      <h4>Grand Luxury Suite</h4>
+                      <span class="rate">₹48,000 / night</span>
+                    </label>
+
+                    <!-- Premium Twin -->
+                    <label class="room-select-card" data-room="Premium Twin Room" data-rate="22000">
+                      <input type="radio" name="selectedRoom" value="Premium Twin Room">
+                      <img src="assets/rooms/premium-twin-1.jpg" alt="Premium Twin Room" class="room-select-img">
+                      <h4>Premium Twin Room</h4>
+                      <span class="rate">₹22,000 / night</span>
+                    </label>
+
+                    <!-- Presidential -->
+                    <label class="room-select-card" data-room="Presidential Suite" data-rate="62000">
+                      <input type="radio" name="selectedRoom" value="Presidential Suite">
+                      <img src="assets/rooms/presidential-1.jpg" alt="Presidential Suite" class="room-select-img">
+                      <h4>Presidential Suite</h4>
+                      <span class="rate">₹62,000 / night</span>
+                    </label>
+
+                    <!-- Royal -->
+                    <label class="room-select-card" data-room="Royal Suite" data-rate="75000">
+                      <input type="radio" name="selectedRoom" value="Royal Suite">
+                      <img src="assets/rooms/royal-1.jpg" alt="Royal Suite" class="room-select-img">
+                      <h4>Royal Suite</h4>
+                      <span class="rate">₹75,000 / night</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- STEP 2: DATES & GUESTS -->
+                <div class="reservation-card" style="margin-top: 0; margin-bottom: 30px;">
+                  <p class="eyebrow">Step 02</p>
+                  <h3 style="margin-top: 8px; font-size: 1.8rem;">Dates &amp; Occupancy</h3>
+
+                  <div class="form-grid" style="margin-top: 20px;">
+                    <div class="form-field">
+                      <label for="bookCheckIn">Check-in Date</label>
+                      <input type="date" id="bookCheckIn" required>
+                    </div>
+
+                    <div class="form-field">
+                      <label for="bookCheckOut">Check-out Date</label>
+                      <input type="date" id="bookCheckOut" required>
+                    </div>
+
+                    <div class="form-field">
+                      <label for="bookGuests">Guests</label>
+                      <select id="bookGuests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests (Connecting Suite)</option>
+                      </select>
+                    </div>
+
+                    <div class="form-field">
+                      <label for="bookRoomsCount">Number of Suites</label>
+                      <select id="bookRoomsCount">
+                        <option value="1" selected>1 Suite</option>
+                        <option value="2">2 Suites</option>
+                        <option value="3">3 Suites</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3: BESPOKE ADD-ONS -->
+                  <div class="addons-section">
+                    <p class="eyebrow">Step 03</p>
+                    <h3 style="margin-top: 8px; font-size: 1.6rem;">Curated Enhancements</h3>
+                    <p style="margin-bottom: 12px; font-size: 0.88rem;">Optional touches to elevate your arrival and
+                      stay.</p>
+
+                    <div class="addons-grid">
+                      <label class="addon-card">
+                        <input type="checkbox" id="addonChauffeur" value="4500" data-name="Airport Chauffeur Transfer">
+                        <div class="addon-info">
+                          <strong>Airport Chauffeur Transfer</strong>
+                          <span>+ ₹4,500 one-way</span>
+                        </div>
+                      </label>
+
+                      <label class="addon-card">
+                        <input type="checkbox" id="addonChampagne" value="6000"
+                          data-name="Champagne &amp; Truffles on Arrival">
+                        <div class="addon-info">
+                          <strong>Champagne &amp; Truffles on Arrival</strong>
+                          <span>+ ₹6,000 package</span>
+                        </div>
+                      </label>
+
+                      <label class="addon-card">
+                        <input type="checkbox" id="addonSpa" value="8500" data-name="Royale Spa 90-Min Couple Ritual">
+                        <div class="addon-info">
+                          <strong>Royale Spa 90-Min Ritual</strong>
+                          <span>+ ₹8,500 per stay</span>
+                        </div>
+                      </label>
+
+                      <label class="addon-card">
+                        <input type="checkbox" id="addonBreakfast" value="2500"
+                          data-name="Daily Gourmet Champagne Breakfast" data-per-night="true">
+                        <div class="addon-info">
+                          <strong>Daily Gourmet Breakfast</strong>
+                          <span>+ ₹2,500 / night</span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- STEP 4: GUEST INFORMATION -->
+                <div class="reservation-card" style="margin-top: 0;">
+                  <p class="eyebrow">Step 04</p>
+                  <h3 style="margin-top: 8px; font-size: 1.8rem;">Guest Contact Details</h3>
+
+                  <div class="form-grid" style="margin-top: 20px;">
+                    <div class="form-field full">
+                      <label for="bookGuestName">Primary Guest Full Name</label>
+                      <input type="text" id="bookGuestName" placeholder="e.g. Lord Alexander Wright" required>
+                    </div>
+
+                    <div class="form-field">
+                      <label for="bookGuestEmail">Email Address</label>
+                      <input type="email" id="bookGuestEmail" placeholder="you@luxury.com" required>
+                    </div>
+
+                    <div class="form-field">
+                      <label for="bookGuestPhone">Phone Number</label>
+                      <input type="tel" id="bookGuestPhone" placeholder="+91 90000 00000" required>
+                    </div>
+
+                    <div class="form-field full">
+                      <label for="bookSpecialRequests">Special Requests / Dietary Preferences</label>
+                      <textarea id="bookSpecialRequests" rows="3"
+                        placeholder="High floor, late check-in, dietary requirements, anniversary setup..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT COLUMN: SUMMARY & CONFIRMATION -->
+              <div class="booking-summary-column">
+                <div class="pricing-summary-card">
+                  <p class="eyebrow">Summary</p>
+                  <h3 id="summaryRoomTitle">Deluxe Room</h3>
+
+                  <div class="price-breakdown">
+                    <div class="price-item">
+                      <span>Rate per night</span>
+                      <span id="summaryNightlyRate">₹18,000</span>
+                    </div>
+
+                    <div class="price-item">
+                      <span>Duration</span>
+                      <span id="summaryNights">1 Night</span>
+                    </div>
+
+                    <div class="price-item">
+                      <span>Room Subtotal</span>
+                      <span id="summaryRoomSubtotal">₹18,000</span>
+                    </div>
+
+                    <div class="price-item">
+                      <span>Selected Enhancements</span>
+                      <span id="summaryAddonsSubtotal">₹0</span>
+                    </div>
+
+                    <div class="price-item">
+                      <span>Luxury Taxes &amp; GST (18%)</span>
+                      <span id="summaryTaxes">₹3,240</span>
+                    </div>
+
+                    <div class="price-item total">
+                      <strong>Grand Total</strong>
+                      <strong id="summaryGrandTotal">₹21,240</strong>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="reservation-submit" id="submitBookingBtn">
+                    Confirm &amp; Guarantee Stay
+                  </button>
+
+                  <p style="margin-top: 16px; font-size: 0.74rem; text-align: center; color: var(--muted);">
+                    &bull; Free cancellation up to 48 hours prior to arrival.<br>
+                    &bull; No prepayment required today.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- CONFIRMATION BANNER (HIDDEN INITIALLY) -->
+        <div class="reservation-confirmation" id="bookingConfirmationScreen" hidden
+          style="max-width: 900px; margin: auto;">
+          <p class="eyebrow">Reservation Confirmed</p>
+          <h3 id="confirmedGuestGreeting">Thank You</h3>
+          <p>
+            Your reservation at SUZAN ROYALE has been confirmed and stored securely. A full confirmation voucher has
+            been recorded in your Guest Dashboard.
+          </p>
+
+          <div class="confirmation-details" id="confirmedSummaryDetails"></div>
+
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="dashboard.html" class="button button-primary">
+              View In Guest Dashboard
+            </a>
+            <button type="button" class="confirmation-button" id="bookAnotherBtn">
+              Make Another Booking
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="logo">
+          SUZAN ROYALE
+        </p>
+
+        <p>
+          Luxury Hotel &amp; Hospitality
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Quick Links
+        </p>
+
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="services.html">Services</a>
+        <a href="dining.html">Dining</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Guest Dashboard</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Contact
+        </p>
+
+        <p>
+          12 Royale Avenue, Hyderabad
+        </p>
+
+        <a href="tel:+919000000000">
+          +91 90000 00000
+        </a>
+
+        <a href="mailto:stay@suzanroyale.com">
+          stay@suzanroyale.com
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Social Media
+        </p>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 SUZAN ROYALE. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rooms &amp; Suites — SUZAN ROYALE Luxury Hotel</title>
+
+  <meta name="description"
+    content="Explore our five-star luxury rooms and suites at SUZAN ROYALE, featuring king beds, marble baths, private lounges and panoramic city views.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        SUZAN ROYALE
+      </a>
+
+      <ul class="desktop-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="rooms.html" class="active">Rooms &amp; Suites</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="dining.html">Dining</a>
+        </li>
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+        <li>
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="reservations.html" class="nav-book">
+          Book Your Stay
+        </a>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-navigation" id="mobileNavigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="rooms.html" class="active">Rooms &amp; Suites</a>
+      <a href="services.html">Services</a>
+      <a href="dining.html">Dining</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="reservations.html" class="mobile-book">
+        Book Your Stay
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO BANNER -->
+    <section class="page-header-banner">
+      <img src="assets/rooms/grand-luxury-2.jpg" alt="SUZAN ROYALE Luxury Suite" class="banner-bg">
+      <div class="banner-overlay"></div>
+
+      <div class="banner-content">
+        <p class="eyebrow">
+          Sanctuary of Refinement
+        </p>
+
+        <h1>
+          Rooms &amp; Suites
+        </h1>
+
+        <p class="banner-tagline">
+          Where Luxury Meets Comfort
+        </p>
+
+        <p class="banner-desc">
+          Thoughtfully appointed accommodations combining bespoke craftsmanship,
+          tranquil privacy and elevated five-star hospitality.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTRO & FILTERS -->
+    <section class="rooms-catalog-section" id="roomsCatalog">
+      <div class="wide-container">
+        <div class="section-heading center">
+          <p class="eyebrow">
+            Our Accommodations
+          </p>
+          <h2>
+            A Room for Every Kind of Stay
+          </h2>
+          <p class="section-description">
+            Filter our residences by suite type to discover the perfect setting for your upcoming retreat.
+          </p>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="room-filters">
+          <button type="button" class="room-filter-btn active" data-filter="all">
+            All Accommodations
+          </button>
+          <button type="button" class="room-filter-btn" data-filter="deluxe">
+            Deluxe Room
+          </button>
+          <button type="button" class="room-filter-btn" data-filter="executive">
+            Executive Suite
+          </button>
+          <button type="button" class="room-filter-btn" data-filter="grand-luxury">
+            Grand Luxury
+          </button>
+          <button type="button" class="room-filter-btn" data-filter="premium-twin">
+            Premium Twin
+          </button>
+          <button type="button" class="room-filter-btn" data-filter="presidential">
+            Presidential Suite
+          </button>
+          <button type="button" class="room-filter-btn" data-filter="royal">
+            Royal Suite
+          </button>
+        </div>
+
+        <!-- DYNAMIC ROOMS CONTAINER -->
+        <div class="catalog-grid" id="roomsContainer">
+          <!-- Room cards will be populated and filtered by script.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="logo">
+          SUZAN ROYALE
+        </p>
+
+        <p>
+          Luxury Hotel &amp; Hospitality
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Quick Links
+        </p>
+
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="services.html">Services</a>
+        <a href="dining.html">Dining</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Guest Dashboard</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Contact
+        </p>
+
+        <p>
+          12 Royale Avenue, Hyderabad
+        </p>
+
+        <a href="tel:+919000000000">
+          +91 90000 00000
+        </a>
+
+        <a href="mailto:stay@suzanroyale.com">
+          stay@suzanroyale.com
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Social Media
+        </p>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 SUZAN ROYALE. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ROOM DETAILS MODAL -->
+  <div class="room-modal" id="roomModal" aria-hidden="true">
+    <div class="room-modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="room-modal-content">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close room details">
+        &times;
+      </button>
+
+      <div class="room-gallery" id="roomGallery"></div>
+
+      <div class="modal-details">
+        <p class="eyebrow" id="modalCategory">
+          Rooms &amp; Suites
+        </p>
+
+        <h2 id="modalRoomName"></h2>
+
+        <p id="modalRoomDescription"></p>
+
+        <div class="room-detail-grid">
+          <div>
+            <strong id="modalRoomPrice"></strong>
+            <span>Rate</span>
+          </div>
+
+          <div>
+            <strong id="modalRoomSize"></strong>
+            <span>Size</span>
+          </div>
+
+          <div>
+            <strong id="modalRoomGuests"></strong>
+            <span>Occupancy</span>
+          </div>
+        </div>
+
+        <p class="modal-subheading">
+          Key Amenities
+        </p>
+
+        <ul class="amenities" id="modalAmenities"></ul>
+
+        <a href="reservations.html" class="modal-reserve" id="modalReserve">
+          Reserve This Room
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

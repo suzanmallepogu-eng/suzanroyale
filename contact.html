@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact &amp; Concierge — SUZAN ROYALE Luxury Hotel</title>
+
+  <meta name="description"
+    content="Contact the concierge desk at SUZAN ROYALE Hyderabad. Inquire about bespoke reservations, private banquets, airport chauffeur and culinary bookings.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        SUZAN ROYALE
+      </a>
+
+      <ul class="desktop-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="rooms.html">Rooms &amp; Suites</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="dining.html">Dining</a>
+        </li>
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+        <li>
+          <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <a href="contact.html" class="active">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="reservations.html" class="nav-book">
+          Book Your Stay
+        </a>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-navigation" id="mobileNavigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="rooms.html">Rooms &amp; Suites</a>
+      <a href="services.html">Services</a>
+      <a href="dining.html">Dining</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="contact.html" class="active">Contact</a>
+
+      <a href="reservations.html" class="mobile-book">
+        Book Your Stay
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACT BANNER -->
+    <section class="page-header-banner">
+      <img src="assets/services/concierge.jpg" alt="SUZAN ROYALE Concierge Desk" class="banner-bg">
+      <div class="banner-overlay"></div>
+
+      <div class="banner-content">
+        <p class="eyebrow">
+          At Your Complete Service
+        </p>
+
+        <h1>
+          Contact &amp; Concierge
+        </h1>
+
+        <p class="banner-tagline">
+          24/7 Guest Assistance &bull; Private Inquiries &bull; Arrival Planning
+        </p>
+
+        <p class="banner-desc">
+          Our dedicated hospitality desk is available around the clock to ensure
+          your stay is flawlessly tailored to your expectations.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT DETAILS & FORM -->
+    <section class="contact-section">
+      <div class="wide-container">
+        <!-- 3 CONTACT INFO CARDS -->
+        <div class="contact-cards-grid">
+          <div class="contact-info-card">
+            <div class="icon-gold">&#9873;</div>
+            <p class="eyebrow">Location</p>
+            <h3>Hotel Address</h3>
+            <p>12 Royale Avenue, Jubilee Hills,<br>Hyderabad, Telangana 500033</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="icon-gold">&#9742;</div>
+            <p class="eyebrow">Direct Line</p>
+            <h3>Telephone &amp; Desk</h3>
+            <p><a href="tel:+919000000000">+91 90000 00000</a><br><a href="tel:+914023456789">+91 40 2345 6789
+                (Concierge)</a></p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="icon-gold">&#9993;</div>
+            <p class="eyebrow">Electronic Mail</p>
+            <h3>Guest Inquiries</h3>
+            <p><a href="mailto:stay@suzanroyale.com">stay@suzanroyale.com</a><br><a
+                href="mailto:concierge@suzanroyale.com">concierge@suzanroyale.com</a></p>
+          </div>
+        </div>
+
+        <!-- MAIN FORM & TRANSPORT GRID -->
+        <div class="contact-main-grid">
+          <!-- CONCIERGE FORM -->
+          <div class="reservation-card" style="margin-top: 0;">
+            <p class="eyebrow">Direct Message</p>
+            <h2 style="font-size: 2.2rem; margin: 10px 0 20px;">Send an Inquiry</h2>
+            <p style="margin-bottom: 24px; font-size: 0.92rem;">Please fill out the form below and our concierge team
+              will respond within 2 hours.</p>
+
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-field full">
+                  <label for="contactSubject">Inquiry Department</label>
+                  <select id="contactSubject">
+                    <option value="Stay & Suite Reservations">Stay &amp; Suite Reservations</option>
+                    <option value="Private Banquets & Events">Private Banquets &amp; Events</option>
+                    <option value="Fine Dining Reservations">Fine Dining &amp; Table Reservations</option>
+                    <option value="Royale Spa & Wellness">Royale Spa &amp; Wellness</option>
+                    <option value="Airport Chauffeur Transfer">Airport Chauffeur Transfer</option>
+                    <option value="Press & Corporate Partnerships">Press &amp; Corporate Partnerships</option>
+                  </select>
+                </div>
+
+                <div class="form-field full">
+                  <label for="contactName">Your Full Name</label>
+                  <input type="text" id="contactName" placeholder="Full name" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactEmail">Email Address</label>
+                  <input type="email" id="contactEmail" placeholder="you@luxury.com" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" placeholder="+91 90000 00000" required>
+                </div>
+
+                <div class="form-field full">
+                  <label for="contactMessage">Your Message</label>
+                  <textarea id="contactMessage" rows="4"
+                    placeholder="How may our concierge team assist your upcoming visit?" required></textarea>
+                </div>
+
+                <div class="form-field full">
+                  <button type="submit" class="reservation-submit" id="contactSubmitBtn">
+                    Send Concierge Inquiry
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div class="reservation-confirmation" id="contactConfirmationBox" hidden
+              style="margin-top: 20px; padding: 30px;">
+              <p class="eyebrow">Message Dispatched</p>
+              <h3>Inquiry Received</h3>
+              <p>Thank you for reaching out to SUZAN ROYALE. Our guest relations executive has received your message and
+                will be in touch promptly.</p>
+            </div>
+          </div>
+
+          <!-- ARRIVAL GUIDE & FAQS -->
+          <div class="contact-sidebar">
+            <!-- LOCATION CARD -->
+            <div class="location-map-card">
+              <p class="eyebrow">Arrival Guide</p>
+              <h3>Getting to the Royale</h3>
+              <p style="margin-bottom: 20px; font-size: 0.9rem;">Centrally positioned within Hyderabad's premier
+                enclave, offering effortless access to all international transit hubs.</p>
+
+              <div class="transit-item">
+                <span>Rajiv Gandhi International Airport (HYD)</span>
+                <span>35 Min Drive</span>
+              </div>
+              <div class="transit-item">
+                <span>Secunderabad Railway Junction</span>
+                <span>20 Min Drive</span>
+              </div>
+              <div class="transit-item">
+                <span>HITEC City Business District</span>
+                <span>15 Min Drive</span>
+              </div>
+              <div class="transit-item">
+                <span>Private Chauffeur Valet Bays</span>
+                <span>On-Site</span>
+              </div>
+
+              <!-- EMBEDDED LOCATION MAP -->
+              <div class="contact-map-wrapper">
+                <iframe title="SUZAN ROYALE Location Map"
+                  src="https://maps.google.com/maps?q=Jubilee%20Hills,%20Hyderabad,%20Telangana%20500033&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  class="contact-map-frame" loading="lazy" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <!-- FREQUENTLY ASKED QUESTIONS ACCORDION -->
+            <div style="margin-top: 36px;">
+              <p class="eyebrow">Helpful Details</p>
+              <h3 style="margin: 10px 0 16px; font-size: 1.8rem;">Frequently Asked Questions</h3>
+
+              <div class="faq-accordion">
+                <div class="faq-item open">
+                  <button type="button" class="faq-question">
+                    What are the standard Check-in and Check-out hours?
+                    <span class="icon">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    Check-in commences at 2:00 PM and Check-out is until 12:00 PM noon. Early check-in or late departure
+                    may be requested through the concierge subject to availability.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button type="button" class="faq-question">
+                    How do I arrange Airport Chauffeur transfers?
+                    <span class="icon">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    Airport transfers in our private luxury sedan fleet can be booked directly during reservation
+                    checkout or by contacting the concierge with your flight number at least 12 hours prior to arrival.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button type="button" class="faq-question">
+                    Is Valet Parking complimentary for hotel guests?
+                    <span class="icon">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    Yes, complimentary 24-hour valet parking and electric vehicle charging bays are provided to all
+                    registered hotel and restaurant guests.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button type="button" class="faq-question">
+                    What is the hotel's cancellation policy?
+                    <span class="icon">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    Standard suite reservations enjoy complimentary cancellation up to 48 hours prior to your scheduled
+                    check-in date with zero penalty fees.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="logo">
+          SUZAN ROYALE
+        </p>
+
+        <p>
+          Luxury Hotel &amp; Hospitality
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Quick Links
+        </p>
+
+        <a href="about.html">About Us</a>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="services.html">Services</a>
+        <a href="dining.html">Dining</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="dashboard.html">Guest Dashboard</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Contact
+        </p>
+
+        <p>
+          12 Royale Avenue, Hyderabad
+        </p>
+
+        <a href="tel:+919000000000">
+          +91 90000 00000
+        </a>
+
+        <a href="mailto:stay@suzanroyale.com">
+          stay@suzanroyale.com
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-heading">
+          Social Media
+        </p>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 SUZAN ROYALE. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
